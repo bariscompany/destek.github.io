@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barış Company Destek Formu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,13 +54,13 @@
 
     <form action="destek_mesaji.php" method="post">
         <label for="isim">İsim:</label>
-        <input type="text" id="isim" name="isim" required><br>
+        <input type="text" id="isim" name="isim" required>
 
         <label for="email">E-posta:</label>
-        <input type="email" id="email" name="email" required><br>
+        <input type="email" id="email" name="email" required>
 
-        <label for="mesaj">Destek Mesajı:</label><br>
-        <textarea id="mesaj" name="mesaj" rows="4" cols="50" required></textarea><br>
+        <label for="mesaj">Destek Mesajı:</label>
+        <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
 
         <input type="submit" value="Gönder">
     </form>
